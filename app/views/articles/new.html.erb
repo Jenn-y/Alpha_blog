@@ -1,5 +1,12 @@
 <h1>Create a new article</h1>
 
+<% if @article.errors.any? %>
+  <h2>Article not saved. Errors: </h2>
+  <% @article.errors.full_messages.each do |msg| %>
+    <%= msg %>
+  <% end %>
+<% end %>
+
 <%= form_with scope: :article, url: articles_path, local: true do |f| %>
 
   <div>

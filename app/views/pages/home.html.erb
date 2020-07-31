@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AlphaBlog</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<h1>Welcome to homepage</h1>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-
-    <h1> Hello world </h1>
-    <%= yield %>
-  </body>
-</html>
+<p><%= link_to 'All Articles', articles_path %></p>
+<p><%= link_to 'About page', about_path %></p>
